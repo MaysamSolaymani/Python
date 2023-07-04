@@ -1,2 +1,2 @@
 # Learning-Python
-Learning Python step by step
+30 Days Of Python 
