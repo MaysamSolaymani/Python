@@ -1,7 +1,6 @@
 from instabot import Bot
 import os,datetime
 
-
 bot = Bot()
 bot.login(username = "username", password = "password")
 mg = open(os.path.dirname(__file__) + "\\Caption.txt", "r")
