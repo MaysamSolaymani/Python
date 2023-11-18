@@ -1,5 +1,6 @@
 import MetaTrader5 as mt5
 import pandas as pd
+
 # display data on the MetaTrader 5 package
 print("MetaTrader5 package author: ",mt5.__author__)
 print("MetaTrader5 package version: ",mt5.__version__)
