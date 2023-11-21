@@ -12,4 +12,5 @@ response = openai.Completion.create(
     presence_penalty=0,
     stop=["\n\n"]
 )
+#######################
 print(response)
