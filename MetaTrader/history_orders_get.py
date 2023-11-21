@@ -1,8 +1,10 @@
 from datetime import datetime
 import MetaTrader5 as mt5
 import pandas as pd
+
 pd.set_option('display.max_columns', 500) # number of columns to be displayed
 pd.set_option('display.width', 1500)      # max table width to display
+
 # display data on the MetaTrader 5 package
 print("MetaTrader5 package author: ",mt5.__author__)
 print("MetaTrader5 package version: ",mt5.__version__)
