@@ -14,9 +14,7 @@ person_info = {
     'country':'Iran',
     'city':'Amol'
     }
-
 # Printing the values stored in the variables
-
 print('First name:', first_name)
 print('First name length:', len(first_name))
 print('Last name: ', last_name)
