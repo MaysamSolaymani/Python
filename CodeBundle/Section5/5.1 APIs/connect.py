@@ -16,4 +16,5 @@ print(req.text)
 jsonify = req.json()
 with open('weather.json', 'w') as f:
     data = json.dump(jsonify, f)
+    print(data)
 
