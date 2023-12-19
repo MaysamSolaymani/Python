@@ -1,4 +1,10 @@
+import urllib
 from datetime import datetime, date, time
+import os
+from os import path
+import urllib.request
+import json
+
 def main():
     print('B')
 def t():
@@ -49,9 +55,9 @@ print(today, today.year)
 now = datetime.now()
 print(now.strftime('%c-%a-%A-%b-%B-%d-%D-%m-%y-%Y-%m'))
 ###########################################
-#f = open('test.dat','w+')
-#f.write('test\nnew line')
-#f.close()
+'''f = open('test.dat','w+')
+f.write('test\nnew line')
+f.close()
 n = open('test.dat', 'a+')
 n.write('\r\nappend line here')
 n.close()
@@ -60,5 +66,21 @@ index = 1
 for x in r.readlines():
     print(str(index) + ': ' + x)
     index = index + 1
-r.close()
+r.close()'''
 ###########################################
+print(os.name)
+print(path)
+print(path.exists("test.dat"))
+print(path.isfile("test.dat"))
+print(path.isdir("test.dat"))
+print(path.realpath("test.dat"))
+#########################################
+request_url = urllib.request.urlopen('http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson')
+print(request_url.getcode())
+data = request_url.read()
+theJson = json.loads(data)
+print(theJson['metadata'])
+for x in theJson['features']:
+    print(x['properties']['place'])
+#########################################
+

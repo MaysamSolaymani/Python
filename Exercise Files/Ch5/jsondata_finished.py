@@ -2,7 +2,7 @@
 # Example file for parsing and processing JSON
 #
 
-import urllib2
+import urllib
 import json
 
 def printResults(data):
@@ -15,11 +15,11 @@ def printResults(data):
   
   # output the number of events, plus the magnitude and each event name  
   count = theJSON["metadata"]["count"];
-  print str(count) + " events recorded"
-  
+  print(str(count) + " events recorded")
+
   # for each event, print the place where it occurred
   for i in theJSON["features"]:
-    print i["properties"]["place"]
+    print(i["properties"]["place"])
 
   # print the events that only have a magnitude greater than 4
   for i in theJSON["features"]:
