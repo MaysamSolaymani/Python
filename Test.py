@@ -1,3 +1,4 @@
+from datetime import datetime, date, time
 def main():
     print('B')
 def t():
@@ -42,4 +43,9 @@ print(f.methodOne())
 print(f.methodTwo())
 print(s.methodOne())
 print(s.methodTwo())
+###########################################
+today = date.today()
+print(today, today.year)
+now = datetime.now()
+print(now.strftime('%c-%a-%A-%b-%B-%d-%D-%m-%y-%Y-%m'))
 ###########################################
