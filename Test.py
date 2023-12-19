@@ -49,3 +49,16 @@ print(today, today.year)
 now = datetime.now()
 print(now.strftime('%c-%a-%A-%b-%B-%d-%D-%m-%y-%Y-%m'))
 ###########################################
+#f = open('test.dat','w+')
+#f.write('test\nnew line')
+#f.close()
+n = open('test.dat', 'a+')
+n.write('\r\nappend line here')
+n.close()
+r = open('test.dat','r')
+index = 1
+for x in r.readlines():
+    print(str(index) + ': ' + x)
+    index = index + 1
+r.close()
+###########################################
