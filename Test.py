@@ -1,8 +1,11 @@
-def f():
-    ls = [1,2,5,4,3]
-    print(ls)
-    for item in ls:
-        assert item / 2
+print('A')
+
+def main():
+    print('B')
+
+print('C')
 
 if __name__ == "__main__":
-    f()
+    main()
+    
+print('D')
