@@ -29,7 +29,17 @@ mylist = ['a', 'b', 'c', 'd']
 for a, b in enumerate(mylist):
     print(a, b)
 #####################
-class firstClass():
+class check:
+    def __init__(self):
+        pass
+    def nice(self):
+        print('nice')
+class checkpython:
+    def __init__(self):
+        pass
+    def nicecode(self):
+        print('nicecode')
+class firstClass:
     def __init__(self, value='100'):
         self._v = value
         pass
@@ -39,7 +49,7 @@ class firstClass():
         return 2
     def get_value(self):
         return self._v
-class secondClass(firstClass):
+class secondClass(firstClass, check, checkpython):
     def __init__(self):
         pass
     def methodOne(self):
@@ -50,6 +60,8 @@ class secondClass(firstClass):
 s = secondClass()
 print(s.methodOne())
 print(s.methodTwo())
+s.nice()
+s.nicecode()
 ###########################################
 today = date.today()
 print(today, today.year)
