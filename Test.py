@@ -84,3 +84,4 @@ for x in theJson['features']:
     print(x['properties']['place'])
 #########################################
 
+
