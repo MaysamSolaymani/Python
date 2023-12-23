@@ -97,5 +97,5 @@ print(theJson['metadata'])
 for x in theJson['features']:
     print(x['properties']['place'])'''
 #########################################
-
-
+#help(str)
+print(datetime.now())

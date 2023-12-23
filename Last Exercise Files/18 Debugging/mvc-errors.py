@@ -56,7 +56,9 @@ def main():
     donald = Duck()
     john = Person()
     fido = Dog()
-
+    print('***********')
+    help(in_the_forest)
+    print('***********')
     print("-- In the forest:")
     for o in ( donald, john, fido ):
         in_the_forest(o)
@@ -65,4 +67,5 @@ def main():
     for o in ( donald, john, fido ):
         in_the_doghouse(o)
  
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
