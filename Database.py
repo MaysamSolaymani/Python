@@ -1,5 +1,6 @@
 import sqlite3
 from decorators import do_twice, timer
+import turtle
 
 class getIter():
     def __init__(self, *args):
@@ -126,4 +127,6 @@ HB = Pencil(100)
 print(HB.counter)
 HB.counter = 20
 print(HB.counter)
+
+
 
