@@ -98,4 +98,8 @@ for x in theJson['features']:
     print(x['properties']['place'])'''
 #########################################
 #help(str)
-print(datetime.now())
+sr = 'my name is meysam'
+print(sr.capitalize())
+print(sr.upper())
+print(sr.count('m'))
+print(sr.find('m'))
