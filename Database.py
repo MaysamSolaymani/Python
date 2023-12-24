@@ -75,4 +75,55 @@ def waste_some_time(num_times):
     for _ in range(num_times):
         sum([i**2 for i in range(10000)])
 
-waste_some_time(1000)
+waste_some_time(100)
+
+###################################################################
+class Accolade:
+    def __init__(self, function):
+        self.function = function
+
+    def __call__(self, name):
+        # Adding Excellency before name
+        name = "Excellency " + name
+        self.function(name)
+        # Saluting after the name
+        print("Thanks " + name + " for gracing the occasion")
+
+
+@Accolade
+def simple_function(name):
+    print(name)
+
+simple_function('John McKinsey')
+###############################################################################
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+@timer
+def factorial(n):
+    return n * factorial(n-1) if n else 1
+
+print(factorial(10))
+###############################################################################
+class Pencil:
+    def __init__(self, count):
+        self._counter = count
+
+    @property
+    def counter(self):
+        return self._counter
+
+    @counter.setter
+    def counter(self, count):
+        self._counter = count
+
+    @counter.getter
+    def counter(self):
+        return self._counter
+
+
+HB = Pencil(100)
+print(HB.counter)
+HB.counter = 20
+print(HB.counter)
+
