@@ -1,5 +1,5 @@
 import sqlite3
-from decorators import do_twice
+from decorators import do_twice, timer
 
 class getIter():
     def __init__(self, *args):
@@ -68,3 +68,11 @@ def say_whee(keys):
     print(keys)
 
 print(say_whee('meysam'))
+print(help(say_whee))
+
+@timer
+def waste_some_time(num_times):
+    for _ in range(num_times):
+        sum([i**2 for i in range(10000)])
+
+waste_some_time(1000)
