@@ -104,7 +104,7 @@ from functools import lru_cache
 def factorial(n):
     return n * factorial(n-1) if n else 1
 
-print(factorial(10))
+print(factorial(3))
 ###############################################################################
 class Pencil:
     def __init__(self, count):
@@ -122,11 +122,16 @@ class Pencil:
     def counter(self):
         return self._counter
 
+    def __call__(self, *args, **kwargs):
+        print('you called me as a method')
+
 
 HB = Pencil(100)
 print(HB.counter)
 HB.counter = 20
 print(HB.counter)
+# call Pencil as a method
+print(HB())
 
 
 
