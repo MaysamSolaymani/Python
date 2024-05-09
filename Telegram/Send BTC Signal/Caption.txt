@@ -1,6 +1,0 @@
-bitcoin signal
-
-your comment
-
-tp: 10000
-sl: 1000
