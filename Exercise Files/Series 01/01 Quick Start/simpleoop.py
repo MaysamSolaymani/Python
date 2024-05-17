@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-
-# simple fibonacci series
-# the sum of two elements defines the next set
 class Fibonacci():
     def __init__(self, a, b):
         self.a = a

@@ -1,11 +1,3 @@
-#!/usr/bin/python3
-# oop3.py by Bill Weinman <http://bw.org/contact/>
-# OOP/Polymorphism example in Python
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright (c) 2010 The BearHeart Group, LLC
-
-# -- VIEW --
-
 class AnimalActions:
     def bark(self): return self._doAction('bark')
     def fur(self): return self._doAction('fur')
@@ -66,4 +58,5 @@ def main():
     for o in ( donald, john, fido ):
         in_the_doghouse(o)
  
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

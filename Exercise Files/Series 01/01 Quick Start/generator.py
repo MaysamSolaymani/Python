@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 def isprime(n):
     if n == 1:
         return False
@@ -15,6 +13,7 @@ def primes(n = 1):
        n += 1 
 
 for n in primes():
-    if n > 100: break
+    if n > 100:
+        break
     print(n)
 

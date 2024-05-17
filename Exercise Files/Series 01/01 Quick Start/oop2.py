@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 class AnimalActions:
     def quack(self): return self.strings['quack']
     def feathers(self): return self.strings['feathers']
