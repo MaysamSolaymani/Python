@@ -1,9 +1,20 @@
-#!/usr/bin/python3
-# ops.py by Bill Weinman [http://bw.org/]
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
-
 def main():
-    print("This is the ops.py file.")
+    num = 5
+    num += 1
+    print(num)
+    num -= 2
+    print(num)
+    num *= 3
+    print(num)
+    num **= 2
+    print(num)
+    num /= 12
+    print(num)
+    num += 1
+    num //= 3
+    print(num)
+    print(divmod(13,3))
 
-if __name__ == "__main__": main()
+
+if __name__ == "__main__":
+    main()
