@@ -1,12 +1,35 @@
-#!/usr/bin/python3
-# functions.py by Bill Weinman [http://bw.org/]
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
-
 def main():
-    testfunc()
+    validfunc()
+    showNumber(1)
+    showNumber(2,5)
+    showNumber(1,2,41)
+    func(1,2,3,4,5,6,7,8,9)
+    withargs(1,2,3,4,5,6,one = 1, two = 2, three = 3)
+    for i in withreturn(25):
+        print(i, end=' ')
 
-def testfunc():
-    print('This is a test function')
+def showNumber(one, two=None, three=3):
+    if two is None:
+        two = 2
+    print('one is {} and two is {} and three is {}'.format(one,two,three))
 
-if __name__ == "__main__": main()
+def withargs(this, that, others, *args, **kwargs):
+    print(this, that, others, args, kwargs)
+    for k in kwargs:
+        print(k, kwargs[k])
+
+def func(one, two, three, *args):
+    print(one, two, three)
+    print(one, two, three, args)
+    for a in args:
+        print(a, end=' ')
+
+def withreturn(n):
+    return range(n)
+
+def validfunc():
+    #Has to have at least one line
+    pass
+
+if __name__ == "__main__":
+    main()
