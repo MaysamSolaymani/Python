@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# bwTL - BW's template library
-# by Bill Weinman [http://bw.org/]
-# Copyright 1995-2010 The BearHeart Group LLC
-
 import sqlite3
 
 __version__ = '1.0.3'

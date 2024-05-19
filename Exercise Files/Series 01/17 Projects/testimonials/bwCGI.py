@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# bwCGI.py by Bill Weinman <http://bw.org/contact/>
-# Copyright (c) 1995-2010 The BearHeart Group, LLC
-#
-
 from cgi import FieldStorage
 import cgitb
 import os

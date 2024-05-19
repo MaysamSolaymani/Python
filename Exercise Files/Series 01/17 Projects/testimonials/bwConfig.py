@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# bwConfig.py by Bill Weinman <http://bw.org/contact/>
-# Copyright (c) 2010 The BearHeart Group, LLC
-#
-
 __version__ = '1.0.0'
 
 class configFile:

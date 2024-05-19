@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# testimonials.py by Bill Weinman <http://bw.org/contact/>
-# Copyright (c) 2010 The BearHeart Group, LLC
-# created 2010-04-23
-#
 
 from bwDB import bwDB
 from bwConfig import configFile
