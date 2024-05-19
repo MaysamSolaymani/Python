@@ -18,4 +18,5 @@ def main():
     donald = Duck(color = 'blue')
     print(donald.get_property('color'))
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

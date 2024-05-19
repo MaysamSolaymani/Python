@@ -1,8 +1,3 @@
-#!/usr/bin/python3
-# sqlite3-class.py by Bill Weinman [http://bw.org/]
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
-
 import sqlite3
 
 class database:
@@ -92,4 +87,5 @@ def main():
     db.delete('three')
     for row in db: print(row)
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,3 @@
-#!/usr/bin/python3
-# saytime-errors.py by Bill Weinman [http://bw.org/]
-# created for Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
 import sys
 import time
 
@@ -23,7 +19,7 @@ class numwords():
             'o\'clock', 'quarter', 'half'
         ), 'range': {
             'hundred': 'hundred'
-        } 'misc': {
+        }, 'misc': {
             'minus': 'minus'
         }
     }
@@ -54,7 +50,7 @@ class numwords():
             s += self._words['ones'][t] + ' ' + self._words['range']['hundred']
             if m: s += ' ' + numwords(m).numwords()    # recurse for remainder
         else:
-            s += self._oor
+            s += self._o_specialsor
         return s
 
     def number(self):
@@ -67,7 +63,7 @@ class saytime(numwords):
         e.g., fourteen til noon, quarter past one, etc.
     """
 
-   _specials = {
+    _specials = {
         'noon': 'noon',
         'midnight': 'midnight',
         'til': 'til',
@@ -126,7 +122,7 @@ def main():
             try: print(saytime(*(sys.argv[1].split(':'))).words())
             except TypeError: print("Invalid time ({})".format(sys.argv[1]))
     else:
-        print(saytime_t(time.localtime).words)
+        print(saytime_t(time.localtime()).words)
 
 def test():
     print("\nnumbers test:")
@@ -148,4 +144,5 @@ def test():
 
     print("\nlocal time is " + saytime_t(time.localtime()).words())
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()

@@ -1,11 +1,18 @@
-#!/usr/bin/python3
-# files.py by Bill Weinman [http://bw.org/]
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
-
 def main():
-    f = open('lines.txt')
-    for line in f:
-        print(line, end = '')
+    buffersize = 50000
+    fin = open('lines.txt', 'r')
+    fout = open('new.txt', 'w')
+    buffer = fin.read(buffersize)
+    while len(buffer):
+        fout.write(buffer)
+        buffer = fin.readlines(buffersize)
+    buffersize = 50000
+    fin = open('olives.jpg', 'rb')
+    fout = open('newolives.jpg', 'wb')
+    buffer = fin.read(buffersize)
+    while len(buffer):
+        fout.write(buffer)
+        buffer = fin.readlines(buffersize)
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
