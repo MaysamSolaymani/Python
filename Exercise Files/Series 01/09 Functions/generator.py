@@ -13,4 +13,4 @@ class Generate:
             self.index += step
 
 if __name__ == "__main__":
-    gen = Generate(1, 25, 2)
+    gen = Generate(-1, 25, 2)
