@@ -1,16 +1,28 @@
-# This is a sample Python script.
+def funcOne():
+    index = 1
+    print(locals())
+def funcTwo(new):
+    print(globals())
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def func(name='name'):
 
+    def t1():
+        return 't1'
+    def t2(text):
+        return 't2' + text
+    if name == 'main':
+        return t1()
+    else:
+        return t2
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    '''funcOne()
+    funcTwo('new')
+    objFunc = funcTwo
+    print(objFunc('two'))
+    del funcTwo
+    objFunc('three')'''
+    #print(funcTwo('t'))
+    f = func()
+    print(f('tr'))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
