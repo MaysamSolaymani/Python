@@ -3,46 +3,82 @@
 <html lang="en">
 <head>
     <title>form & input</title>
+    <style>
+        body{
+            background: #dff6e5;
+            font-family: Arial;
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+        #container{
+            background: beige;
+            border: blue solid 2px;
+            width: 450px;
+            padding: 4px;
+        }
+        #head{
+            font-family: "Arial Black";
+            font-size:  15px;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <div id="container">
+        <form action="POST">
         <label><strong>Registration form</strong></label>
         <br><br>
-        <table>
-            <thead><tr><td bgcolor="#6495ed">Item</td><td bgcolor="#6495ed">Input</td></tr></thead>
-            <tbody>
-                <tr>
-                    <td><label for="name">Name</label></td>
-                    <td><input type="text" id="name"></td>
-                </tr>
-                <tr>
-                    <td><label for="family">Family</label></td>
-                    <td><input type="text" id="family"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email</label></td>
-                    <td><input type="text" id="email"></td>
-                </tr>
-                <tr>
-                    <td><label for="password">Password</label></td>
-                    <td><input type="password" id="password"></td>
-                </tr>
-                <tr>
-                    <td><label for="Area">Location</label></td>
-                    <td><select id="Area">
-                        <option value="US" >US</option>
-                        <option value="CA" >CA</option>
-                        <option value="UK" >UK</option>
-                        <option value="AU" >AU</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><label>Gender</label></td>
-                    <td><input type="radio" name="Gender" value="male" checked>male
-                    <input type="radio" name="Gender" value="female">female</td>
-                </tr>
-            </tbody>
-        </table>
+         <fieldset>
+            <legend>Account</legend>
+            <table>
+                <thead  id="head"><tr><td bgcolor="#6495ed">Item</td><td bgcolor="#6495ed">Input</td></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="family">Family</label></td>
+                        <td><input type="text" id="family" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="text" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Area">Location</label></td>
+
+                            <td><select id="Area">
+                                <option value="US" >US</option>
+                                <option value="CA" >CA</option>
+                                <option value="UK" >UK</option>
+                                <option value="AU" >AU</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input type="radio" name="Gender" value="male" checked>male
+                        <input type="radio" name="Gender" value="female">female</td>
+                    </tr>
+                    <tr>
+                        <td><label>Intrests</label></td>
+                        <td><input type="checkbox" name="Intrests" value="Movies">Movies
+                        <input type="checkbox" name="Intrests" value="Game">Game
+                        <input type="checkbox" name="Intrests" value="Travel">Travel
+                        <input type="checkbox" name="Intrests" value="Technology">Technology</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit" value="Submit"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
     </form>
+    </div>
 </body>
 </html>
