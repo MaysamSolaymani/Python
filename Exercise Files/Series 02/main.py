@@ -1,6 +1,7 @@
 def funcOne():
     index = 1
     print(locals())
+    
 def funcTwo(new):
     print(globals())
 
