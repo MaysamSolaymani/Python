@@ -1,6 +1,5 @@
 from collections import Counter
 
-
 for item, value in Counter.__dict__.items():
     print(item, value)
 
