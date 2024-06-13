@@ -9,4 +9,5 @@ def decorator(func):
 def func():
     print('test decorator')
 
+
 func()
