@@ -3,7 +3,6 @@ import pdb
 
 '''for item, value in defaultdict.__dict__.items():
     print(item, value)'''
-
 d = {}
 print(d)
 d = defaultdict(lambda: 0)
