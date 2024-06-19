@@ -8,5 +8,4 @@ def decorator(func):
 @decorator
 def func():
     print('test decorator')
-
 func()
