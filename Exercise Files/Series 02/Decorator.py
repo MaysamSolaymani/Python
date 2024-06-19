@@ -5,6 +5,7 @@ def decorator(func):
         print('\'{}\' changed'.format(func.__name__))
     return changefunc
 
+
 @decorator
 def func():
     print('test decorator')
