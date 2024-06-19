@@ -1,4 +1,5 @@
 def decorator(func):
+    
     def changefunc():
         print('new string before change \'{}\''.format(func.__name__))
         func()
