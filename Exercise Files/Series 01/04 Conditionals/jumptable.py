@@ -1,6 +1,5 @@
 class jumptable():
     jumptable = {}
-
     def set(self, k, v):
         self.jumptable[k] = v
 
