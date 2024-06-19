@@ -18,7 +18,7 @@ def main():
     j.set('two', two)
     j.set('three', three)
     j.set('default', default)
-
+    
     try:
         j.go('seven')
     except RuntimeError as e:
