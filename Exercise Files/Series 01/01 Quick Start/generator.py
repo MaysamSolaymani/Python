@@ -9,6 +9,7 @@ def isprime(n):
         return True
 
 def primes(n = 1):
+    
    while(True):
        if isprime(n): yield n
        n += 1 
