@@ -1,4 +1,4 @@
-fh = open('lines.txt')
+f = open('lines.txt')
 
-for line in fh.readlines():
+for line in f.readlines():
     print(line, end='')
