@@ -2,7 +2,6 @@ from collections import Counter
 
 for item, value in Counter.__dict__.items():
     print(item, value)
-
 c = Counter('abcdeabcdabcaba')       # count elements from a string
 print(c.most_common(3))              # three most common elements
 print(sorted(c))                     # list all unique elements
