@@ -62,7 +62,6 @@ class database:
 
 def main():
     db = database(filename = 'test.db', table = 'test')
-
     print('Create table test')
     db.sql_do('drop table if exists test')
     db.sql_do('create table test ( t1 text, i1 int )')
