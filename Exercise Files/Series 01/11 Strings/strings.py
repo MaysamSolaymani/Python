@@ -13,4 +13,5 @@ def main():
     print(s.isprintable())
 
 if __name__ == "__main__":
+    
     main()
