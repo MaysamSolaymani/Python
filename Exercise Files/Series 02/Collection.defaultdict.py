@@ -7,7 +7,7 @@ print(d)
 d = defaultdict(lambda: 0)
 print(d['one'])
 print(d)
-d['two'] = 2
+d['twenty'] = 20
 print(d)
 print(d.items())
 pdb.set_trace() #start pdb trace online and quite with insert 'q'
